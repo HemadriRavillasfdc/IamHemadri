@@ -1,302 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8">
-<title>Page Title</title>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-html,body {font-family:"Verdana",sans-serif}
-h1,h2,h3,h4,h5,h6 {font-family:"Segoe UI",sans-serif}
-
-.topnav {
-  overflow: hidden;
-  background-color: #6e6b6b;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.topnav a {
-  float: left;
-  color: #f6f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-  color: #e6850d;
-}
-.topnav .icon {
-  display: none;
-}
-.top-box {
-  width: 200px;
-  height: 65px;
-  overflow: visible;
-}
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
-  background-color: #f1f1f1;
-  padding-left: 0.2em
-}
-
-/* Create four equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 25%;
-  padding: 10px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.nexttoimage {
-  padding-left: 25em
-}
-.floatremove {
-  float: none;
-}
-
-
-* {box-sizing: border-box;}
-
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-.navbarbrand {
-  float: right;
-  color: #f6f2f2;
-  height: 50px;
-  padding: 15px 15px;
-  font-size: 18px;
-  line-height: 20px;
-}
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  
-</style>
-<script src=""></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ff6b6b, #556270);
+            color: white;
+            text-align: center;
+        }
+        nav {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        .container {
+            display: flex;
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        .sidebar {
+            width: 30%;
+            padding: 20px;
+        }
+        .content {
+            width: 70%;
+            padding: 20px;
+        }
+        .about, .projects, .resume, .contact, .blog {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid white;
+        }
+        .project, .blog-post {
+            margin: 10px 0;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+    </style>
+</head>
 <body>
-
-
-<div>
-<div class="topnav" id="myTopnav">
-  <a class="active" href="#home">Home</a>
-  <a href="#About">About</a>
-  <a href="#Resume">Resume</a>
-  <a href="#Blog">Blog</a>
-  <a href="#ContactUs">Contact</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
-<div >
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-  <a class="navbarbrand" href="#">Hemadri Ravilla</a>
-</div>
-</div>
-
-<div class="top-box">
-
-</div>
-
-
-<div id="home" >
-<div class="row">
-  <div class="card column">
-    <img src="/Users/hemadriravilla/Downloads/1773.JPG" alt="John" style="width:100%">
-    <h1><b>Hemadri Ravilla</b></h1> 
-      <p>Salesforce Technical Lead</p> 
-      <p>11 X Salesforce certified Application Architect</p>
-    <a href="#"><i class="fa fa-dribbble"></i></a>
-    <a href="#"><i class="fa fa-twitter"></i></a>
-    <a href="#"><i class="fa fa-linkedin"></i></a>
-    <a href="#"><i class="fa fa-facebook"></i></a>
-  </div>
-
-
-<div class="nexttoimage ">
-  <h1>This is a Heading</h1>
-  <p>This is a paragraph.</p>
-  <p>This is a another paragraph.</p>
-</div>
-</div>
-</div>
-<div class="top-box">
-  
-</div>
-<div class="top-box"></div>
-
-</div>
-
-</div>
-<div id="About" class="floatremove" >
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
-
-</p>
-<p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
-
-</p>
-
-<p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-</div>
-
-<div id="ContactUs">
-  <div class="container" >
-      <div class="row main-top-margin text-center">
-          <div class="col-md-8 col-md-offset-2 " data-scrollreveal="enter top and move 100px, wait 0.3s">
-              <h1>Reach Out</h1>
-              
-          </div>
-      </div>
-      <!-- ./ Main Heading-->
-      <div class="row">
-          <div class="col-md-12  col-sm-12 ">
-              <div class="col-md-6  " data-scrollreveal="enter left and move 100px, wait 0.4s">
-                  <h3> My Work Location</h3>
-                  <hr />
-                  <p>
-                  Franklin,<br />
-                  
-                  Tenneessee, United States<br />                          
-                  Call: +1 7746414941<br />
-                  Email: hemadrirn@gmail.com<br />
-                      </p>
-                 
-              </div>
-              <div class="container">
-                <form action="/action_page.php">
-                  <label for="fname">First Name</label>
-                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
-              
-                  <label for="lname">Last Name</label>
-                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-              
-                  <label for="country">Country</label>
-                  <select id="country" name="country">
-                    <option value="australia">Australia</option>
-                    <option value="canada">Canada</option>
-                    <option value="usa">USA</option>
-                  </select>
-              
-                  <label for="subject">Subject</label>
-                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-              
-                  <input type="submit" value="Submit">
-                </form>
-              </div>
-</div>  
-<!--END CONTACT SECTION --> 
-<!--FOOTER SECTION -->
-<div id="footer">
-  <div class="container">
-      <div class="row ">
-          &copy; 2014 www.hemadriravilla.com | All Right Reserved 				
-
-      </div>
-      
-  </div>
- 
-</div>  
-<script>
-  function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  }
-  </script>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#resume">Resume</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <div class="sidebar">
+            <div class="about" id="about">
+                <img src="profile.jpg" alt="Profile Picture">
+                <h1>About Me</h1>
+                <p>Hi, I'm [Your Name], a passionate web developer with a love for creating stunning and functional websites.</p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="projects">
+                <h1>Projects</h1>
+                <div class="project">
+                    <h2>Project 1</h2>
+                    <p>Description of project 1.</p>
+                </div>
+                <div class="project">
+                    <h2>Project 2</h2>
+                    <p>Description of project 2.</p>
+                </div>
+                <div class="project">
+                    <h2>Project 3</h2>
+                    <p>Description of project 3.</p>
+                </div>
+            </div>
+            <div class="resume" id="resume">
+                <h1>Resume</h1>
+                <p><a href="resume.pdf" download style="color: white; text-decoration: underline;">Download My Resume</a></p>
+            </div>
+            <div class="blog" id="blog">
+                <h1>Blog</h1>
+                <div class="blog-post">
+                    <h2>Blog Post 1</h2>
+                    <p>Summary of blog post 1. <a href="#">Read more...</a></p>
+                </div>
+                <div class="blog-post">
+                    <h2>Blog Post 2</h2>
+                    <p>Summary of blog post 2. <a href="#">Read more...</a></p>
+                </div>
+                <div class="blog-post">
+                    <h2>Blog Post 3</h2>
+                    <p>Summary of blog post 3. <a href="#">Read more...</a></p>
+                </div>
+            </div>
+            <div class="contact" id="contact">
+                <h1>Contact</h1>
+                <p>Email: your.email@example.com</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" style="color: white; text-decoration: underline;">Your Profile</a></p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
