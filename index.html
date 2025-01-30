@@ -1,107 +1,302 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hemadri Ravilla - Salesforce Technical Lead</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <script defer src="js/script.js"></script>
-</head>
+<meta charset="UTF-8">
+<title>Page Title</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body {font-family:"Verdana",sans-serif}
+h1,h2,h3,h4,h5,h6 {font-family:"Segoe UI",sans-serif}
+
+.topnav {
+  overflow: hidden;
+  background-color: #6e6b6b;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.topnav a {
+  float: left;
+  color: #f6f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  color: #e6850d;
+}
+.topnav .icon {
+  display: none;
+}
+.top-box {
+  width: 200px;
+  height: 65px;
+  overflow: visible;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: #f1f1f1;
+  padding-left: 0.2em
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.nexttoimage {
+  padding-left: 25em
+}
+.floatremove {
+  float: none;
+}
+
+
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.navbarbrand {
+  float: right;
+  color: #f6f2f2;
+  height: 50px;
+  padding: 15px 15px;
+  font-size: 18px;
+  line-height: 20px;
+}
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+</style>
+<script src=""></script>
 <body>
 
-    <!-- Navigation -->
-    <header>
-        <nav>
-            <div class="logo">Hemadri Ravilla</div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Salesforce Technical Lead</h1>
-            <p>11X Certified | 12+ Years of Experience | Salesforce Architect & Developer</p>
-            <a href="#contact" class="btn">Get in Touch</a>
-        </div>
-    </section>
+<div>
+<div class="topnav" id="myTopnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#About">About</a>
+  <a href="#Resume">Resume</a>
+  <a href="#Blog">Blog</a>
+  <a href="#ContactUs">Contact</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<div >
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+  <a class="navbarbrand" href="#">Hemadri Ravilla</a>
+</div>
+</div>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a Salesforce Technical Lead with over 12 years of experience in Salesforce System Architecture, Customization, and Integration. I have designed and implemented Salesforce Financial Cloud, Service Cloud, and Experience Cloud solutions.</p>
-    </section>
+<div class="top-box">
 
-    <!-- Certifications Section -->
-    <section id="certifications">
-        <h2>Certifications</h2>
-        <ul>
-            <li>Salesforce Certified Associate</li>
-            <li>Salesforce Certified Integration</li>
-            <li>Salesforce Certified Service Cloud Consultant</li>
-            <li>Salesforce Certified Data Architect</li>
-            <li>Salesforce Certified Application Architect</li>
-            <li>Salesforce Certified Sharing and Visibility Architect</li>
-            <li>Salesforce Certified Platform App Builder</li>
-            <li>Salesforce Certified Sales Cloud Consultant</li>
-            <li>Salesforce Certified Platform Developer</li>
-            <li>Salesforce Certified Administrator</li>
-            <li>Salesforce Certified Marketing Cloud Email Specialist</li>
-        </ul>
-    </section>
+</div>
 
-    <!-- Experience Section -->
-    <section id="experience">
-        <h2>Work Experience</h2>
-        <div class="job">
-            <h3>Senior Salesforce Developer | CTPL, State of CT</h3>
-            <p>April 2024 - Present</p>
-            <ul>
-                <li>Developed technical documentation and applied Salesforce best practices.</li>
-                <li>Designed and delivered user stories and bug fixes.</li>
-                <li>Code review using Git, Jenkins, and automated deployments.</li>
-            </ul>
-        </div>
-        <div class="job">
-            <h3>Salesforce Technical Lead | Nissan, Franklin TN</h3>
-            <p>Oct 2023 – April 2024</p>
-            <ul>
-                <li>Built Lightning Web Components and Aura Components.</li>
-                <li>Integrated Salesforce with external applications using REST APIs.</li>
-                <li>Developed UI using JavaScript, Apex, and Salesforce Lightning.</li>
-            </ul>
-        </div>
-        <div class="job">
-            <h3>Salesforce Developer | Bank of Philippine Islands</h3>
-            <p>June 2020 - Sep 2023</p>
-            <ul>
-                <li>Implemented Customer Portal and Experience Cloud solutions.</li>
-                <li>Designed and developed Salesforce applications and integrated APIs.</li>
-                <li>Worked with OAuth 2.0, SSO, and financial accounts from FSC package.</li>
-            </ul>
-        </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
+<div id="home" >
+<div class="row">
+  <div class="card column">
+    <img src="/Users/hemadriravilla/Downloads/1773.JPG" alt="John" style="width:100%">
+    <h1><b>Hemadri Ravilla</b></h1> 
+      <p>Salesforce Technical Lead</p> 
+      <p>11 X Salesforce certified Application Architect</p>
+    <a href="#"><i class="fa fa-dribbble"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-linkedin"></i></a>
+    <a href="#"><i class="fa fa-facebook"></i></a>
+  </div>
 
-    <footer>
-        <p>&copy; 2025 Hemadri Ravilla. All rights reserved.</p>
-    </footer>
 
+<div class="nexttoimage ">
+  <h1>This is a Heading</h1>
+  <p>This is a paragraph.</p>
+  <p>This is a another paragraph.</p>
+</div>
+</div>
+</div>
+<div class="top-box">
+  
+</div>
+<div class="top-box"></div>
+
+</div>
+
+</div>
+<div id="About" class="floatremove" >
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+
+</p>
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+
+</p>
+
+<p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+</div>
+
+<div id="ContactUs">
+  <div class="container" >
+      <div class="row main-top-margin text-center">
+          <div class="col-md-8 col-md-offset-2 " data-scrollreveal="enter top and move 100px, wait 0.3s">
+              <h1>Reach Out</h1>
+              
+          </div>
+      </div>
+      <!-- ./ Main Heading-->
+      <div class="row">
+          <div class="col-md-12  col-sm-12 ">
+              <div class="col-md-6  " data-scrollreveal="enter left and move 100px, wait 0.4s">
+                  <h3> My Work Location</h3>
+                  <hr />
+                  <p>
+                  Franklin,<br />
+                  
+                  Tenneessee, United States<br />                          
+                  Call: +1 7746414941<br />
+                  Email: hemadrirn@gmail.com<br />
+                      </p>
+                 
+              </div>
+              <div class="container">
+                <form action="/action_page.php">
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              
+                  <label for="country">Country</label>
+                  <select id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                  </select>
+              
+                  <label for="subject">Subject</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+              
+                  <input type="submit" value="Submit">
+                </form>
+              </div>
+</div>  
+<!--END CONTACT SECTION --> 
+<!--FOOTER SECTION -->
+<div id="footer">
+  <div class="container">
+      <div class="row ">
+          &copy; 2014 www.hemadriravilla.com | All Right Reserved 				
+
+      </div>
+      
+  </div>
+ 
+</div>  
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
 </body>
 </html>
